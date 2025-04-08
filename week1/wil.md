@@ -28,3 +28,31 @@
 - 백엔드 API : 프론트엔드의 요청에 포함될 내용, 보내는 응답의 형태를 정의한 것
 - REST API : REST Architecture를 따르도록 설계된 API
 - URl에는 조작할 데이터, HTTP Method에는 데이터에 대한 행위를 담는다.
+
+5. todo api
+
+회원가입 이메일	   POST 	todo/acount/{id}
+
+회원가입 비밀번호 	POST 	todo/acount/{pw}
+  
+할 일 생성 			POST 	todo/acount/todo/{todo_id}
+  
+할 일 조회 			GET		todo/acount/todo/{todo_id}
+
+할 일 수정 			PATCH	todo/acount/todo/{todo_id} 
+
+할 일 삭제 			DELETE	todo/acount/todo/{todo_id}
+
+할 일 체크 			POST 	/todo/{todo_id}/check
+
+할 일 체크 해제		POST 	/todo/{todo_id}/check
+
+친구 찾기			GET 		/todo/friends/{member_id}
+
+친구 팔로우		POST 	/todo/friends/{member_id}/follow
+
+친구 언팔로우		GET 		/todo/friends/{member_id}/unfollow
+
+친구 리스트 조회		GET		/todo/friends/{friend_list}
+
+친구 할일 조회 		GET 		/todo/friends/{member_id}/todo/{todo_id}
